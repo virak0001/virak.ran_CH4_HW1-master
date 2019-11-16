@@ -7,7 +7,7 @@ public class random {
 		//////////__Random__///////////
 		int[] random = new int[15];
 		for (int i = 0; i < random.length; i++) {
-			random[i] = (int)Math.floor((Math.random() * 10) + 1);
+			random[i] = (int)Math.floor((Math.random() * 10) + 0);
 		}
 		System.out.println(Arrays.toString(random));
 		
