@@ -14,19 +14,17 @@ public class random {
 		//////////__condition__///////
 		String index = "";
 		int counter = 0;
-		Arrays.sort(random);
-		if(Arrays.binarySearch(random,5) < 0) {
-			System.out.println("number 5 not found");
-		}else {
 			for (int i = 0; i < random.length; i++) {
 				if(random[i] == 5) {
 					counter++;
-					index += Integer.toString(i)+" ";	
+					index += Integer.toString(i)+" ";
 				}
 			}
-		 System.out.println("There are " + counter+ " of number 5 found in index as below.");
-		 System.out.println("index "+index);
-		}
-		
+			if(counter >0) {
+				System.out.println("There are " + counter+ " of number 5 found in index as below.");
+				 System.out.println("index "+index);
+			}else {
+				System.out.println("Number 5 not found");
+			}
 	}
 }
